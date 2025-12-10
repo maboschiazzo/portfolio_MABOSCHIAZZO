@@ -10,7 +10,6 @@
             font-family: Arial, sans-serif;
             background: #f6f6f6;
             margin: 0;
-            padding: 0;
         }
 
         header {
@@ -46,105 +45,109 @@
             box-shadow: 0 0 8px rgba(0,0,0,0.15);
         }
 
-        h2 {
-            margin-top: 0;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+#RESPONSIVE
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                padding: 8px 3px;
+                font-size: 15px;
+            }
+
+            section div {
+                flex-direction: column !important;
+                text-align: center;
+            }
         }
     </style>
 </head>
 
 <body>
-<div style="text-align: right; margin: 5px 0;">
+
+#AUDIO_ARRIBA_A_LA_DERECHA
+<div style="text-align: right; margin: 5px 10px;">
     <audio controls style="width: 260px;">
-        <source src="/static/home/JFB.mp3" type="audio/mp3">
+        <source src="static/home/JFB.mp3" type="audio/mp3">
     </audio>
 </div>
 
-    <header>
-        <h1>Maria Agustina</h1>
-        <p style="color:white; font-size: 19px;">Escritos — Back-End Developer</p>
-    </header>
+<header>
+    <h1>Maria Agustina</h1>
+    <p style="color:white; font-size: 19px;">Escritos — Back-End Developer</p>
+</header>
 
-    <nav>
-        <a href="#sobre-mi">Sobre Mí</a>
-        <a href="#escritos">Escritos</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#curriculum">Currículum</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+<nav>
+    <a href="#sobre-mi">Sobre Mí</a>
+    <a href="#escritos">Escritos</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#curriculum">Currículum</a>
+    <a href="#contacto">Contacto</a>
+</nav>
 
-<section id="sobre-mi" style="max-width:700px; margin: 40px auto;">
+<section id="sobre-mi">
     <h2 style="text-align:center;">Sobre Mí</h2>
 
-    <div style="
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        margin-top: 20px;
-    ">
-
-        <img src="/static/home/Agustina.jpg"
-             alt="Foto de Agustina"
-             style="width:190px; border-radius:8px;">
-
+    <div style="display: flex; align-items: center; gap: 25px; margin-top: 20px;">
+        <img src="static/home/Agustina.jpg" alt="Foto de Agustina" style="width:190px;">
         <p style="font-size: 17px; line-height: 1.6;">
             Bienvenidos a mi página personal. Aquí podrás encontrar una pequeña descripción sobre mí, mi trabajo y mis intereses. 
             Me apasiona el diseño, la tecnología y crear experiencias digitales que realmente funcionen.
         </p>
-
     </div>
 </section>
 
+<section id="escritos">
+    <h2>Escritos</h2>
+    <p style="font-size: 17px;">
+        MA Relatos Link:
+        <a href="https://raw.githubusercontent.com/maboschiazzo/MArelatos/main/MARF.pdf" 
+            download
+            style="padding:12px 20px; background:#386b5785; color:white; text-decoration:none; border-radius:8px;">
+            Descargar mi PDF
+        </a>
+    </p>
+</section>
 
-    <section id="escritos">
-        <h2>Escritos</h2>
-        <p style="font-size: 17px;">
-            MA Relatos Link: <a href="https://raw.githubusercontent.com/maboschiazzo/MArelatos/main/MARF.pdf" 
-   download 
-   style="padding:12px 20px; background:#386b5785; color:white; text-decoration:none; border-radius:8px;">
-   Descargar mi PDF
-</a>
-
-        </p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p style="font-size: 17px;">
-            Proyectos y desarrollos:
-                            <a
-                  href="https://github.com/maboschiazzo"
-                  class="text-blue-500 hover:text-blue-700 mr-4"
-  style="padding:12px 20px; background:#386b5785; color:white; text-decoration:none; border-radius:8px; display:inline-block;"
->
-  <i class="fab fa-github"></i> GitHub
-</a>
-        </p>
-    </section>
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <p style="font-size: 17px;">
+        Proyectos y desarrollos:
+        <a href="https://github.com/maboschiazzo"
+           style="padding:12px 20px; background:#386b5785; color:white; text-decoration:none; border-radius:8px; display:inline-block;">
+           GitHub
+        </a>
+    </p>
+</section>
 
 <section id="curriculum">
     <h2>Currículum</h2>
-    <p style="font-size: 17px;"></p>
     <p>Podés descargar mi currículum en el siguiente enlace:</p>
 
-    <a href="/static/home/cv/Maria%20Agustina%20Aguilar%20Boschiazzo%20CV.pdf" 
+    <a href="static/home/cv/Maria%20Agustina%20Aguilar%20Boschiazzo%20CV.pdf" 
        download
-    style="padding:12px 20px; background:#386b5785; color:white; text-decoration:none; border-radius:8px; display:inline-block;"
->
+       style="padding:12px 20px; background:#386b5785; color:white; text-decoration:none; border-radius:8px; display:inline-block;">
         Descargar mi CV
     </a>
 </section>
 
+<section id="contacto">
+    <h2>Contacto</h2>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p style="font-size: 17px;"> <p>Email: <strong>maguilarboschiazzo@gmail.com</strong></p>
+    <p>Email: <strong>maguilarboschiazzo@gmail.com</strong></p>
 
-        <p style="font-size: 17px;">LinkedIn:  
+    <p>LinkedIn:  
         <a href="https://www.linkedin.com/in/maguilarboschiazzo" target="_blank">
             Mi perfil de LinkedIn
         </a>
-        <p><strong>Diciembre 2025 &copy</strong></p>
-    </section>
+    </p>
+
+    <p><strong>Diciembre 2025 &copy</strong></p>
+</section>
 
 </body>
 </html>
